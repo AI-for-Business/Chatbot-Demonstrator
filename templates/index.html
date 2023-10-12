@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/abba-web-logo.svg') }}" type="image/svg+xml">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body data-bot-img="{{ url_for('static', filename='images/chatbot.png') }}"
+  data-person-img="{{ url_for('static', filename='images/user.png')}}">
+
+  <div class="main-content">
+
+    <section class="info-box">
+      <div class="info-header">
+        <div class="logo-wrapper">
+          <img src="{{ url_for('static', filename='images/abba-logo.jpg')}}" alt="Logo" class="logo">
+          <img src="{{ url_for('static', filename='images/uni-hohenheim.svg')}}" alt="Logo" class="logo">
+        </div>
+        <h1 style="color: #004080; margin-top: 30px; margin-bottom: 30px; text-align: center;">
+          Herzlich willkommen zum <br> Chatbot Kiki von ABBA
+        </h1>
+      </div>
+      <div>
+        <p>Dieser Chatbot ermöglicht es Ihnen, mit der API von OpenAI zu interagieren, ohne einen Account zu benötigen.
+          Zum Ausprobieren können Sie sich an folgender Schritt-für-Schritt-Anleitung (ab Seite 7)
+          <!-- <a href="https://digital.uni-hohenheim.de/fileadmin/einrichtungen/digital/Von_Null_auf_ChatGPT_-_Anleitung.pdf"
+            target="_blank">
+            Schritt-für-Schritt-Anleitung </a> -->
+          orientieren, oder einfach loslegen.
+        </p>
+      </div>
+
+      <div class="info-box-pdf-container">
+
+        <object class="pdf" data="{{ url_for('static', filename='files/Von_Null_auf_ChatGPT.pdf') }}" type="application/pdf"
+          width="100%" height="600px">
+          <p>Es scheint, dass Ihr Browser kein PDF anzeigt. <a
+              href="https://digital.uni-hohenheim.de/fileadmin/einrichtungen/digital/Von_Null_auf_ChatGPT_-_Anleitung.pdf">Klicken
+              Sie hier, um das PDF in einem neuen Tab zu öffnen.</a>
+          </p>
+        </object>
+      </div>
+
+      <div>
+        <h4>Hinweis:</h4>
+        <p style="font-size: small;">
+          Bitte beachten Sie, dass bei der Verwendung von GPT-Modellen Ihre Fragen von OpenAI aufgezeichnet werden.
+          Aus diesem Grund sollten Sie keine privaten Informationen wie echte Namen oder Daten eingeben.
+        </p>
+      </div>
+    </section>
+
+    <section class="msger">
+      <header class="msger-header">
+        <div class="msger-header-title">
+          Chat mit Kiki
+        </div>
+      </header>
+
+      <main class="msger-chat">
+        <div class="msg left-msg">
+          <div class="msg-img" style="background-image: url('/static/images/chatbot.png')"></div>
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">Kiki</div>
+              <div class="msg-info-time"></div>
+            </div>
+            <div class="msg-text">
+              Guten Tag, wie kann ich Ihnen behilflich sein?
+            </div>
+          </div>
+        </div>
+
+        <div class="msg left-msg pending-indicator" style="display: none;">
+          <div class="msg-img" style="background-image: url('/static/images/chatbot.png')"></div>
+          <div class="msg-bubble">
+            <div class="msg-text">
+              Antwort wird generiert...
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <form class="msger-inputarea">
+        <input type="text" class="msger-input" id="textInput" placeholder="Geben Sie Ihren Prompt ein...">
+        <button type="submit" class="msger-send-btn">Senden</button>
+      </form>
+    </section>
+
+
+    <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+
+</html>
