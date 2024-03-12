@@ -1,11 +1,12 @@
 # What is this repository?
-tbd
+Kiki chatbot that provides direct access to ChatGPT without any registration, installation or paywall. A supplementary step-by-step guide provides a quick and easy introduction to the possibilities of generative AI and guidance for prompting.
 
 # What can I use it for?
-tbd
+- get to know ChatGPT without any registration, installation or paywall
+- learn how to design prompts to solve tasks efficiently
 
 # What do I need in order to use it?
-tbd
+- internet access
 
 # Copyright / License
 This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY-NC-SA 4.0).
