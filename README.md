@@ -1,5 +1,7 @@
 # What is this repository?
 Kiki chatbot that provides direct access to ChatGPT without any registration, installation or paywall. A supplementary step-by-step guide provides a quick and easy introduction to the possibilities of generative AI and guidance for prompting.
+![image](https://github.com/AI-for-Business/Chatbot-Demonstrator/assets/74908412/d662164f-ba0e-48de-8496-c1aa911120bb)
+
 
 # What can I use it for?
 - get to know ChatGPT without any registration, installation or paywall
