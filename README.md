@@ -36,7 +36,7 @@ Cite as:\
 via https://github.com/AI-for-Business/Chatbot-Demonstrator*
 
 # DOI - Code
-tbd
+[![DOI](https://zenodo.org/badge/663050712.svg)](https://zenodo.org/doi/10.5281/zenodo.10836055)
 
 # Contact / About us
 * You can find all of our repositories [here](https://github.com/orgs/AI-for-Business/repositories).
